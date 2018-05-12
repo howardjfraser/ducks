@@ -1,0 +1,35 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'tmp/**/*'
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Exclude:
+    - '**/*'
+
+Style/EmptyMethod:
+  Exclude:
+    - '**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Naming/FileName:
+  Exclude:
+    - 'Gemfile'
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: 'compact'
