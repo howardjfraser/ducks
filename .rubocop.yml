@@ -22,7 +22,7 @@ Style/EmptyMethod:
     - '**/*'
 
 Metrics/LineLength:
-  Max: 120
+  Max: 100
 
 Naming/FileName:
   Exclude:
